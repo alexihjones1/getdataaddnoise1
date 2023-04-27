@@ -1,11 +1,15 @@
 Package: getdataaddnoise
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Get data from dropbox and add noise
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Alexi Jones
+Maintainer: Alexi Jones, alexihjones@gmail.com
+Description: GetDataAsset — this function has no inputs. It
+    downloads, unzips, and loads into R the data asset stored at the following 
+    Dropbox link: https://www.dropbox.com/s/5mzc60tbh09ew49/lalonde%20nsw.csv.zip?dl=0
+    AnalysisFunction(x,training) — this function takes the numeric array x and randomly adds white
+    noise (drawn i.i.d. from unif(−1, 1)) to x when training = T. When training = F, the function
+    simply returns x.
+License: MIT
 Encoding: UTF-8
 LazyData: true
